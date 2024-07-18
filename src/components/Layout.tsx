@@ -28,7 +28,7 @@ const Layout = () => {
                     <LuBadgeCheck className='text-secondary' size={25}/>
                     <p className='font-medium text-[14px] capitalize'>secure and scalable</p>
                     </div>
-                    <small className='text-white py-3 w-full text-[12px]'>Rest assured knowing  your data is protected with robust security measures, while our platform scales with your team's needs.</small>
+                    <small className='text-white py-3 w-full text-[12px]'>Rest assured knowing  your data is protected with robust security measures, while our platform scales with your team&apos;s needs.</small>
                 </div>
                 <div className='m-2'>
                     <div className='flex items-center gap-3 my-3'>
