@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
+  font-family: "Outfit", sans-serif;
   background-image: radial-gradient(circle at center center, #845ec2, #171717),
     repeating-radial-gradient(
       circle at center center,
