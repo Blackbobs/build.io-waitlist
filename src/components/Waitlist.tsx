@@ -9,7 +9,7 @@ const Waitlist: React.FC = () => {
     <div>
         <div className="text-center my-10">
             <small>Give us a star on Github</small>
-      <Link href={'https://github.com/Blackbobs/build.io'} target="_blank" className="flex items-center gap-2 justify-center w-full max-w-[300px] mx-auto bg-[#121212] rounded py-2 px-5 cursor-pointer">
+      <Link href={'https://github.com/Blackbobs/build.io'} target="_blank" className="flex items-center gap-2 justify-center w-full max-w-[300px] mx-auto bg-[#121212] rounded-md py-2 px-5 cursor-pointer">
         <Image
           src="./github-mark-white.svg"
           alt="icon_github"
@@ -30,7 +30,7 @@ const Waitlist: React.FC = () => {
               firstname
             </label>
             <input
-              className="bg-transparent border-2 border-primary rounded p-2 focus:outline-none bg-[#151415]"
+              className="bg-transparent border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
               type="text"
               id="firstname"
               name="firstname"
@@ -45,7 +45,7 @@ const Waitlist: React.FC = () => {
               email
             </label>
             <input
-              className="bg-transparent border-2 border-primary rounded p-2 focus:outline-none bg-[#151415]"
+              className="bg-transparent border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
               type="email"
               id="email"
               name="email"
@@ -60,7 +60,7 @@ const Waitlist: React.FC = () => {
               What do you do?
             </label>
             <input
-              className="bg-transparent border-2 border-primary rounded p-2 focus:outline-none bg-[#151415]"
+              className="bg-transparent border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
               type="email"
               id="email"
               name="email"
