@@ -30,7 +30,7 @@ const Waitlist: React.FC = () => {
               firstname
             </label>
             <input
-              className="bg-transparent border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
+              className="border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
               type="text"
               id="firstname"
               name="firstname"
@@ -45,7 +45,7 @@ const Waitlist: React.FC = () => {
               email
             </label>
             <input
-              className="bg-transparent border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
+              className="border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
               type="email"
               id="email"
               name="email"
@@ -60,7 +60,7 @@ const Waitlist: React.FC = () => {
               What do you do?
             </label>
             <input
-              className="bg-transparent border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
+              className="border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
               type="email"
               id="email"
               name="email"

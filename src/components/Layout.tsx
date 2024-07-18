@@ -5,7 +5,7 @@ import Waitlist from './Waitlist';
 const Layout = () => {
   return (
     <section className='text-primary flex flex-col md:flex-row gap-5 h-full'>
-        <div className='flex-1 mt-3'>
+        <div className='flex-1 mt-5'>
             <h1 className='text-[18px] w-full text-center p-3 font-bold'>Unite, Collaborate, Create: Your all-in-one tech collaboration
             platform</h1>
             <div className='flex flex-col items-start max-w-[500px] mx-auto'>
