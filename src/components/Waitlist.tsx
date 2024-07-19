@@ -4,7 +4,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import github from "../../public/assets/GitHub_Logo_White.png";
 import Image from "next/image";
 import Link from "next/link";
-import addToWaitlist from "@/actions";
+// import addToWaitlist from "@/actions";
+import { addToWaitlist } from "@/appwrite";
 
 const Waitlist: React.FC = () => {
   const [firstname, setFirstname] = useState('')

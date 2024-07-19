@@ -1,4 +1,11 @@
 import getDb from "@/db";
+// import { Client } from 'appwrite';
+
+// const client = new Client();
+
+// client
+//     .setEndpoint('https://cloud.appwrite.io/v1')
+//     .setProject('669ac30e000290db6973');
 
 export const addToWaitlist = async (firstname: string, email: string, role: string) => {
     try {
