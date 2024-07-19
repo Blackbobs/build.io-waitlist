@@ -1,10 +1,22 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import github from "../../public/assets/GitHub_Logo_White.png";
 import Image from "next/image";
 import Link from "next/link";
+import addToWaitlist from "@/actions";
 
 const Waitlist: React.FC = () => {
+  const [firstname, setFirstname] = useState('')
+  const [email, setEmail] = useState('')
+  const [role, setRole] = useState('')
+  const handleSubmit = async () => {
+    const response = await addToWaitlist(firstname, email, role)
+    setFirstname('')
+    setEmail('')
+    setRole('')
+    console.log(response)
+  }
   return (
     <div>
         <div className="text-center my-10">
@@ -20,7 +32,7 @@ const Waitlist: React.FC = () => {
         <Image src={github} alt="GitHub Logo" width={50} height={50} priority />
       </Link>
         </div>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <div className="max-w-[400px] mx-auto space-y-3">
           <div className="flex flex-col gap-1">
             <label
@@ -35,6 +47,8 @@ const Waitlist: React.FC = () => {
               id="firstname"
               name="firstname"
               placeholder="firstname..."
+              value={firstname}
+              onChange={(e) => setFirstname(e.target.value)}
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -50,26 +64,30 @@ const Waitlist: React.FC = () => {
               id="email"
               name="email"
               placeholder="email..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="flex flex-col gap-1">
             <label
               className="capitalize font-light text-[14px]"
-              htmlFor="email"
+              htmlFor="role"
             >
               What do you do?
             </label>
             <input
               className="border-2 border-secondary rounded p-2 focus:outline-none bg-[#151415]"
-              type="email"
-              id="email"
-              name="email"
+              type="text"
+              id="role"
+              name="role"
               placeholder="e.g project manager..."
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
             />
           </div>
           <div>
             <button
-            disabled
+            onClick={handleSubmit}
               className="bg-brand p-3 font-medium capitalize w-full rounded my-5 flex items-center justify-center gap-3 disabled:bg-gray-500"
               type="submit"
             >

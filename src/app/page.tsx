@@ -9,3 +9,7 @@ export default function Home() {
     </main>
   );
 }
+
+// D7fhjQcNuNiMlxPJ
+// ayodejiayodele350
+// mongodb+srv://ayodejiayodele350:D7fhjQcNuNiMlxPJ@cluster0.mstwhhk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
