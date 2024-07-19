@@ -37,7 +37,8 @@ export const addToWaitlist = async (
       { firstname: firstname, email: email, role: role }
     );
 
-    console.log(response)
+    return response
+    // console.log(response)
   } catch (error) {
     console.log(error);
   }
