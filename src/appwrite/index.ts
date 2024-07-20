@@ -8,22 +8,6 @@ client
 
 const databases = new Databases(client);
 
-// const promise = databases.createDocument(
-//   "669aeb560037c7d31414",
-//   "669aeb6d001df729bbaa",
-//   ID.unique(),
-//   { title: "Hamlet" }
-// );
-
-// promise.then(
-//   function (response) {
-//     console.log(response);
-//   },
-//   function (error) {
-//     console.log(error);
-//   }
-// );
-
 export const addToWaitlist = async (
   firstname: string,
   email: string,
